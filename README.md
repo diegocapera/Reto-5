@@ -77,4 +77,22 @@ elif distancia == 10:
 else:
     print("El punto está fuera del círculo.")
 ```
-En este punto se tiene que tener en cuenta que el centro del círculo es (0,0) y que el radio de dicho circulo es de 10 unidades, por lo que lo unico que se le pide al usuario es que ingrese las coordenadas del punto que quiere ingresar, y con esto se usa el teorema de pitagoras el cual usamos la ecuacion de pitagoras que es h = (x*2+y*2)**2
+En este punto se tiene que tener en cuenta que el centro del círculo es (0,0) y que el radio de dicho circulo es de 10 unidades, por lo que lo unico que se le pide al usuario es que ingrese las coordenadas del punto que quiere ingresar, y con esto se usa el teorema de pitagoras el cual usamos la ecuacion de pitagoras que es h = (x*2+y*2)**2 y con su respectivo resultado se determina si el punto propuesto por el usuario esta dentro o fuera del circulo.
+
+## Punto 6
+Dadas tres longitudes positivas, determinar si con esas longitudes se puede construir un triángulo.
+```python
+# Pedir al usuario tres longitudes
+lado1 = float(input("Introduce la longitud del primer lado: "))
+lado2 = float(input("Introduce la longitud del segundo lado: "))
+lado3 = float(input("Introduce la longitud del tercer lado: "))
+
+# Verificar si se puede construir un triángulo
+if lado1 + lado2 >= lado3 and lado1 + lado3 >= lado2 and lado2 + lado3 >= lado1:
+    print("Sí se puede construir un triángulo con esas longitudes.")
+else:
+    print("No se puede construir un triángulo con esas longitudes.")
+```
+En el ultimo punto no se establece un triangulo en especifico, por lo que hay que tener en cuenta todos los que hay, los cuales se tiene que procurar ciertos requerimientos, los cuales son que la suma de los lados sea mayor o igual, ya que esto permite que este los triangulos equilateros e isosceles, por lo que se procede a pedirle tres valores positivos al usuario, y despues se suman y se comparan con cada uno de los tres lados, y dado a que la suma de dos lados tiene que ser mayor al tercer lado, entonces se dan dos posiilidades, las cuales si se cumplen en esa suma, se imprimira un mensaje confirmando que si se puede hacer ese triangulo, de lo contrario imprime el mensaje confirmando lo contrario.
+Este es el archivo .zip del reto ya que no se puede subir sin que este en un formato especifico como lo pide git hub.
+[RETO 5.zip](https://github.com/diegocapera/Reto-5/files/11072521/RETO.5.zip)
